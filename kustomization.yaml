@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: 585715538481.dkr.ecr.ap-northeast-2.amazonaws.com/wavving
+  newName: 585715538481.dkr.ecr.ap-northeast-2.amazonaws.com/wavving
+  newTag: latest
+resources:
+  - prod-deployment.yaml
+  - prod-service.yaml
